@@ -1,14 +1,14 @@
 <script>
-	/**
-	 * @type {{
-	 * deleted?: boolean;
-	 * user: string;
-	 * time_ago: number;
-	 * content: string;
-	 * comments: any[];
-	 * }}
-	 */
-	export let comment;
+	/** @type {{
+	 *   comment: {
+	 *     deleted?: boolean;
+	 *     user: string;
+	 *     time_ago: number;
+	 *     content: string;
+	 *     comments: any[];
+	 *   };
+	 * }} */
+	let { comment } = $props();
 </script>
 
 {#if !comment.deleted}

@@ -1,6 +1,6 @@
 <script>
-	/** @type {string} */
-	export let section;
+	/** @type {{ section: string }} */
+	let { section } = $props();
 </script>
 
 <nav>
